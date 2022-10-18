@@ -44,3 +44,18 @@ for(var i = 0; i < navLinks.length; i++){
         menuBtn.style.pointerEvent = "auto";
     });
 }
+
+// ====navBar color change=====
+
+function changebg(){
+    let navbar = document.getElementById("navbar")
+    let scrollValue = window.scrollY;
+    if (scrollValue > 150){
+        navbar.classList.add("bgcolor");
+
+    }else{
+        navbar.classList.remove("bgcolor");
+    }
+}
+window.addEventListener("scroll", changebg);
+
